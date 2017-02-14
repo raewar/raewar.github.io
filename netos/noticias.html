@@ -49,7 +49,7 @@
     
     <div class="row ">
         <div class="col s2 push-s10">
-            <a id="floating-button" class="btn-floating btn-large waves-effect waves-light red" href="#top"><i class="material-icons">arrow_upward</i></a>
+            <a id="floating-button" class="btn-floating btn-large waves-effect waves-light red fade-in" href="#top"><i class="material-icons">arrow_upward</i></a>
         </div>
     </div>
    
@@ -64,25 +64,46 @@
                 <div class="col s12 m12 l12">
                     <ul class="timeline z-depth-0">
                         <li class="event" data-date="Enero 2016">
-                            <h3>Seminario Flotación, Jan Cilliers</h3>
-                            <p>El Departamento de Procesos de la empresa NETOS asistió al seminario 
-                                "POSITRON VISUALIZATION OF FLOTATION PARTICLES AND LIQUID TO VALIDATE CFD MODELS".</p>
-                            <a class="waves-effect waves-light btn light-green grey-text text-darken-4 z-depth-0" href="netos_mineria.html">Ver mas</a>
+                            <div class="row">
+                                <div class="col s12 m9">
+                                    <h3>Seminario Flotación, Jan Cilliers</h3>
+                                    <p>El Departamento de Procesos de la empresa NETOS asistió al seminario 
+                                     "POSITRON VISUALIZATION OF FLOTATION PARTICLES AND LIQUID TO VALIDATE CFD MODELS".</p>
+                                    <a class="waves-effect waves-light btn light-green grey-text text-darken-4 z-depth-0" href="netos_mineria.html">Ver mas</a>
+                                </div>
+                                <div class="col m3">
+                                    <img class="responsive-img timeline-img hide-on-small-and-down" src="img/Fotos/Noticias/noticias-ultima-1.png" alt=""/>
+                                </div>
+                            </div>
                         </li>
                         <li class="event" data-date="Enero de 2016">
-                            <h3>Taller de Innovación en el marco de Proyecto Voucher - CORFO</h3>
-                            <p>Los profesionales de la empresa se reunieron con Ingenieros de la Universidad Técnica Federico 
-                                Santa María en el marco de las actividades que se están desarrollando en el Proyecto Voucher de Innovación 
-                                que la empresa se adjudicó en el mes de septiembre de 2015</p>
-                            <a class="waves-effect waves-light btn light-green grey-text text-darken-4 z-depth-0" href="netos_mineria.html">Ver mas</a>
-
+                            <div class="row">
+                                <div class="col s12 m9">
+                                    <h3>Taller de Innovación en el marco de Proyecto Voucher - CORFO</h3>
+                                    <p>Los profesionales de la empresa se reunieron con Ingenieros de la Universidad Técnica Federico 
+                                        Santa María en el marco de las actividades que se están desarrollando en el Proyecto Voucher de Innovación 
+                                        que la empresa se adjudicó en el mes de septiembre de 2015</p>
+                                    <a class="waves-effect waves-light btn light-green grey-text text-darken-4 z-depth-0" href="netos_mineria.html">Ver mas</a>
+                                </div>
+                                <div class="col m3">
+                                    <img class="responsive-img timeline-img hide-on-small-and-down" src="img/Fotos/Noticias/noticias-ultima-2.png" alt=""/>
+                                </div>
+                            </div>
                         </li>
                         <li class="event" data-date="Octubre de 2015">
-                            <h3>Presentación en Procemin 2015</h3>
-                            <p>Hernán Robles, Gerente General de Netos S.A., presentó el trabajo titulado “New approach for load level estimation in 
-                                SAG mills using a sensor system and optimization algorithm” el viernes 23 de octubre. En donde se expusieron los resultados 
-                                del primer prototipo del sistema onMilL™</p>
-                            <a class="waves-effect waves-light btn light-green grey-text text-darken-4 z-depth-0" href="netos_mineria.html">Ver mas</a>
+                            <div class="row">
+                                <div class="col s12 m9">
+                                    <h3>Presentación en Procemin 2015</h3>
+                                    <p>Hernán Robles, Gerente General de Netos S.A., presentó el trabajo titulado “New approach for load level estimation in 
+                                        SAG mills using a sensor system and optimization algorithm” el viernes 23 de octubre. En donde se expusieron los resultados 
+                                        del primer prototipo del sistema onMilL™</p>
+                                    <a class="waves-effect waves-light btn light-green grey-text text-darken-4 z-depth-0" href="netos_mineria.html">Ver mas</a>
+                                </div>
+                                <div class="col m3">
+                                    <img class="responsive-img timeline-img hide-on-small-and-down" src="img/Fotos/Noticias/noticias-ultima-3.png" alt=""/>
+                                </div>
+                            </div>
+                                    
                         </li>
                         <li class="event" data-date="Julio de 2015">
                             <h3>Presentación en MAPLEMIN 2015</h3>
@@ -141,8 +162,7 @@
           </div>
         </section>
       </div>
-    
-    
+        
     <footer class="page-footer grey darken-1">
         <div class="row">
             <div class="col s12 l5 hide-on-med-and-down">
@@ -182,19 +202,20 @@
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
     <script>
-         $(document).ready(function(){
+        $(document).ready(function(){
             $('.scrollspy').scrollSpy();
             $('#floating-button').pushpin({
                 offset: 800
-              });
-          });
-          $(window).scroll(function() {
-                if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
-                    $('#floating-button').fadeIn(200);    // Fade in the arrow
-                } else {
-                    $('#floating-button').fadeOut(200);   // Else fade out the arrow
-                }
             });
+        });
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 150) {
+                $('#floating-button').removeClass('fade-in');
+                $('#floating-button').fadeIn(250);
+            } else {
+                $('#floating-button').fadeOut(250);
+            }
+        });
     </script>
     </body>
 </html>
