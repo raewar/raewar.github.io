@@ -168,3 +168,98 @@ nav ul a.btn{
     max-width: none;
     height: 100vh;
 }
+
+/*Timeline*/
+#content {
+    text-align: center;
+}
+
+section.timeline-outer {
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1.header {
+    font-size: 50px;
+    line-height: 70px;
+}
+/* Timeline */
+
+/*Estilos del contenedor*/
+.timeline {
+    border-left: 8px solid #ffa726;
+    margin: 50px auto;
+    position: relative;
+    list-style: none;
+    text-align: left;
+}
+
+/*Margen interno*/
+.timeline h1,
+.timeline h2,
+.timeline h3, 
+.timeline p,
+.timeline a{
+    margin-left: 20px;
+}
+
+.timeline .event {
+    /*linea separadora*/
+    border-bottom: 1px solid rgba(160, 160, 160, 0.2);
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.timeline .event:before,
+.timeline .event:after {
+    position: absolute;
+    display: block;
+    top: 0;
+}
+
+.timeline .event:before {
+    left: -177.5px;
+    content: attr(data-date);
+    text-align: right;
+    font-weight: 200;
+
+    font-size: 16px;
+    min-width: 120px;
+}
+
+.timeline .event:after {
+    box-shadow: 0 0 0 8px #26c6da;
+    left: -10px;
+    background: #26c6da;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    content: "";
+    top: 5px;
+}
+
+@media (max-width: 945px) {
+  .timeline .event::before {
+    left: 20px;
+    top: 30px;
+    min-width: 0;
+    font-size: 13px;
+  }
+  .timeline h3 {
+    font-size: 20px;
+  }
+  .timeline p {
+    padding-top: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline .event::before {
+    left: 20px;
+    top: 30px;
+    font-size: 13px;
+  }
+  .timeline h3 {
+    font-size: 18px;
+  }
+}
