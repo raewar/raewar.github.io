@@ -134,8 +134,8 @@ nav ul a.btn{
 .description{
     font-style: normal;
     text-align: justify;
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 200;
+    font-size: 20px;
 }
 
 #section2{
@@ -187,7 +187,7 @@ h1.header {
 
 /*Estilos del contenedor*/
 .timeline {
-    border-left: 8px solid #ffa726;
+    border-left: 8px solid #e0e0e0;
     margin: 50px auto;
     position: relative;
     list-style: none;
@@ -227,9 +227,9 @@ h1.header {
 }
 
 .timeline .event:after {
-    box-shadow: 0 0 0 8px #26c6da;
+    box-shadow: 0 0 0 8px #e0e0e0;
     left: -10px;
-    background: #26c6da;
+    background: black;
     border-radius: 50%;
     height: 12px;
     width: 12px;
@@ -245,10 +245,7 @@ h1.header {
 
 @media (max-width: 945px) {
   .timeline .event::before {
-    left: 20px;
-    top: 30px;
-    min-width: 0;
-    font-size: 13px;
+    content: "";
   }
   .timeline h3 {
     font-size: 20px;
@@ -260,11 +257,15 @@ h1.header {
 
 @media (max-width: 768px) {
   .timeline .event::before {
-    left: 20px;
-    top: 30px;
-    font-size: 13px;
+        content: "";
   }
   .timeline h3 {
     font-size: 18px;
   }
+}
+
+/*Onmil Declarations*/
+.sub-table-of-contents li a{
+    font-size: 13px;
+    margin-left: 20px;
 }

@@ -12,7 +12,6 @@
     <meta name="robots" content="index, follow">
     <meta name="revisit-after" content="1 month">
     
-    
     <link rel="icon" type="image/png" href="img/Logos/favicon/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="img/Logos/favicon/favicon-16x16.png" sizes="16x16" />
 
@@ -23,32 +22,16 @@
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body >
-    <nav class="white z-depth-0" role="navigation ">
-        <div class="nav-wrapper">
-            <a id="logo-container" href="#" class="brand-logo"><img id="img-logo" class="responsive-img" src="img/Logos/Mineria/Logo.png" /> <img id="img-logo" class="responsive-img" src="img/Logos/Mineria/nombre.png" /> </a>
-
-            <ul class="right hide-on-med-and-down">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="noticias.html">Noticias</a></li>
-                <li><a class="waves-effect waves-light btn orange lighten-1 grey-text text-darken-4 z-depth-0" href="onmil.html">Mineria</a></li>
-                <li><a class="waves-effect waves-light btn cyan lighten-2 grey-text text-darken-4 z-depth-0" href="netos_investigacion.html">Investigacion</a></li>
-                <li><a class="waves-effect waves-light btn light-green grey-text text-darken-4 z-depth-0" href="netos_agricultura.html">Agricultura</a></li>
-            </ul>
-
-            <ul id="nav-mobile" class="side-nav">
-                <li class="active"><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="noticias.html">Noticias</a></li>
-                <li><a class="orange-text text-lighten-1" href="netos_mineria.html">Mineria</a></li>
-                <li><a class="cyan-text text-lighten-2" href="netos_investigacion.html">Investigacion</a></li>
-                <li><a class="light-green-text" href="netos_agricultura.html">Agricultura</a></li>
-            </ul>
-            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-      </div>
-    </nav>
+    <div id="nav-module" ></div>
     <div class="row">
-        <div class="col s12 m10 l10">
+        <div class="col s3 push-s9">
+            <a id="floating-button" class="btn-floating btn-large waves-effect waves-light red fade-in hide-on-large-only" href="#top"><i class="material-icons">arrow_upward</i></a>
+        </div>
+    </div>
+    <div id="top" class="scrollspy"></div>
+    
+    <div class="row">
+        <div class="col s12 l10">
             <header id="show1" class="relative showcase section scrollspy">
                 <div class="row">
                     <div class="col s12 center-align">
@@ -65,140 +48,227 @@
             <section id="caracteristica1" class="showcase section scrollspy">
 
                 <div class="row">
-                    <div class="col s12 l8 center-align">
-                        <img class="responsive-img" src="img/Productos/pantallazo-onmill-1.png" alt=""/>
-                    </div>
-                    <div class="col s12 l4 center-align">
+                    <div class="col s12 l12 center-align">
                         <ul class="collapsible disabled z-depth-0" data-collapsible="expandable" style="">
                             <li>
-                                <div class="collapsible-header active"><i class="material-icons cyan-text lighten-1">visibility</i>Software de monitoreo de Jb</div>
+                                <div id="selector1" class="collapsible-header active"><h5>¿En que consiste Onmil?</h5></div>
                                 <div class="collapsible-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut tempus lorem, at porttitor diam. Nulla dapibus ex sed erat sodales, dictum sagittis lorem ultricies. Cras tincidunt lacus porttitor elit vestibulum, sed interdum sapien tempus. Ut at tempor urna. Duis viverra imperdiet augue, non gravida orci. Aenean varius dapibus diam, id volutpat sem molestie in. Mauris tellus turpis, luctus id sodales et, tempor ut lectus.
+                                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra, 
+                                    leo porta commodo ultricies, nisl mi hendrerit magna, congue laoreet lorem nisi 
+                                    mattis purus. Mauris ac leo diam. Aenean id libero bibendum, mattis dui sit amet,
+                                    fermentum eros. Donec vitae elementum tellus. Suspendisse consequat nisl ac ex 
+                                    condimentum euismod. 
+                                    </p>
+                                    
                                 </div>
                             </li>
                         </ul>
+                    </div>
+                    <div class="col l4 center-align hide-on-med-and-down">
+                        <ul class="collapsible disabled z-depth-0" data-collapsible="expandable" style="">
+                            <li>
+                                <div id="selector1" class="collapsible-header active"><h5>Mas detalles</h5></div>
+                                <div class="collapsible-body">
+                                    <p class="description">Morbi venenatis nulla suscipit ligula fermentum, eget convallis arcu ullamcorper. 
+                                    Maecenas in lacus mauris. Nam faucibus sed dolor in hendrerit. Pellentesque habitant morbi
+                                    tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col s12 l8 center-align">
+                        <img class="responsive-img" style="max-height: 400px;" src="img/Onmil/sidefront.png" alt=""/>
                     </div>
                 </div>
 
             </section>
             <section id="caracteristica2" class="showcase section scrollspy">
                 <div class="row">
-                    <div class="col s12 l4 center-align">
+                    <div class="col s12 center-align">
                         <ul class="collapsible disabled z-depth-0" data-collapsible="expandable" style="">
                             <li>
-                                <div class="collapsible-header active"><i class="material-icons orange-text lighten-1">visibility</i>Software de monitoreo de Jb</div>
+                                <div class="collapsible-header active"><h5>Componentes</h5></div>
                                 <div class="collapsible-body">
-                                    Sed id est vel ipsum posuere imperdiet. Phasellus viverra auctor ipsum vel dignissim. Nullam posuere lorem metus, faucibus scelerisque nisi gravida facilisis. Nullam venenatis molestie tortor et tempor. Sed id est diam. Mauris facilisis, lorem fringilla maximus blandit, odio ex vehicula felis, eu interdum felis nisl id turpis. Etiam semper aliquet augue, in fringilla quam. Nulla porta bibendum justo.
+                                    <p class="description">Sed id est vel ipsum posuere imperdiet. Phasellus viverra auctor ipsum vel dignissim. 
+                                    Nullam posuere lorem metus, faucibus scelerisque nisi gravida facilisis. Nullam venenatis 
+                                    molestie tortor et tempor. Sed id est diam. Mauris facilisis, lorem fringilla maximus blandit, 
+                                    odio ex vehicula felis, eu interdum felis nisl id turpis. Etiam semper aliquet augue, in 
+                                    fringilla quam. Nulla porta bibendum justo.</p>
                                 </div>
                             </li>
                         </ul>
                     </div>
-                    <div class="col s12 l8 center-align">
-                        <img class="responsive-img" src="img/Productos/pantallazo-onmill-2.png" alt=""/>
+                    <div class="col s12 center-align">
+                        <img class="responsive-img" style="max-height: 400px;" src="img/Onmil/sistema.png" alt=""/>
                     </div>
                 </div>
 
             </section>
-            <section id="caracteristica3" class="showcase section scrollspy">
-                <div class="row">
-                    <div class="col s12 l8 center-align">
-                        <img class="responsive-img" src="img/Productos/pantallazo-onmill-3.png" alt=""/>
-                    </div>
-                    <div class="col s12 l4 center-align">
+            <section id="caracteristica21" class="showcase section scrollspy">
+                 <div class="row">
+                    <div class="col s12 l12 center-align">
                         <ul class="collapsible disabled z-depth-0" data-collapsible="expandable" style="">
                             <li>
-                                <div class="collapsible-header active"><i class="material-icons orange-text lighten-1">visibility</i>Software de monitoreo de Jb</div>
+                                <div class="collapsible-header active"><h5>Hardware</h5></div>
                                 <div class="collapsible-body">
-                                    In congue fermentum ullamcorper. Sed varius lacinia elit vel mattis. Aenean in est gravida, pellentesque eros nec, auctor lacus. Nam facilisis risus ac augue dictum, ac commodo nulla rhoncus. Phasellus venenatis in sapien ut commodo. Ut efficitur tempor felis, id facilisis nunc. Proin dictum condimentum elit et faucibus.
+                                    <p class="description">Sed id est vel ipsum posuere imperdiet. Phasellus viverra auctor ipsum vel dignissim. 
+                                    Nullam posuere lorem metus, faucibus scelerisque nisi gravida facilisis. Nullam venenatis 
+                                    molestie tortor et tempor. Sed id est diam. Mauris facilisis, lorem fringilla maximus blandit, 
+                                    odio ex vehicula felis, eu interdum felis nisl id turpis. Etiam semper aliquet augue, in 
+                                    fringilla quam. Nulla porta bibendum justo.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col s3 m4 l3 center-align hide-on-small-only">
+                        <ul class="collapsible disabled z-depth-0" data-collapsible="expandable" style="">
+                            <li>
+                                <div class="collapsible-header active"><h6>Mas Hardware</h6></div>
+                                <div class="collapsible-body">
+                                    <p class="description">Sed id est vel ipsum posuere imperdiet.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col s6 m4 l3 center-align">
+                        <img class="responsive-img" style="max-height: 400px;" src="img/Onmil/side.png" alt=""/>
+                    </div>
+                    <div class="col s6 l3 center-align hide-on-med-only">
+                        <img class="responsive-img" style="max-height: 400px;" src="img/Onmil/sidefront.png" alt=""/>
+                    </div>
+                    <div class="col s3 m4 l3 center-align hide-on-small-only">
+                        <ul class="collapsible disabled z-depth-0" data-collapsible="expandable" style="">
+                            <li>
+                                <div class="collapsible-header active"><h6>Y mas Hardware</h6></div>
+                                <div class="collapsible-body">
+                                    <p class="description">Sed id est vel ipsum posuere imperdiet.</p>
                                 </div>
                             </li>
                         </ul>
                     </div>
                 </div>
             </section>
-            <section id="caracteristica4" class="showcase section scrollspy">
-                <h5 class="center" style="font-weight: 300;">Implementación</h5>
+            <section id="caracteristica22" class="showcase section scrollspy">
                 <div class="row">
-                    <div class="col s12 l6 center-align">
-                        <h6 class="center" style="font-weight: 300;">Opcion 1</h6>
+                    <div class="col s12 m12 l8">
+                        <div class="video-container">
+                            <iframe width="853" height="480" src="https://player.vimeo.com/video/181638411?autoplay=1&loop=1" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col s12 m12 l4 center-align">
                         <ul class="collapsible disabled z-depth-0" data-collapsible="expandable" style="">
                             <li>
-                                <div class="collapsible-header active"><i class="material-icons orange-text lighten-1">visibility</i>Software de monitoreo de Jb</div>
+                                <div class="collapsible-header active"><h5>Software</h5></div>
                                 <div class="collapsible-body">
-                                    Maecenas ultricies nisl a mi viverra sollicitudin. Quisque nec lacus sit amet turpis pellentesque aliquam. Sed lacinia pellentesque consectetur. Nunc ullamcorper, metus sed condimentum feugiat, lorem est imperdiet mi, sed consectetur felis neque sed metus. Vivamus ullamcorper, orci vel blandit molestie, sapien ligula cursus mi, in feugiat mauris nulla non nibh. 
+                                    <p class="description">Sed id est vel ipsum posuere imperdiet. Phasellus viverra auctor ipsum vel dignissim. 
+                                    Nullam posuere lorem metus, faucibus scelerisque nisi gravida facilisis. Nullam venenatis 
+                                    molestie tortor et tempor. Sed id est diam. Mauris facilisis, lorem fringilla maximus blandit, 
+                                    odio ex vehicula felis, eu interdum felis nisl id turpis. Etiam semper aliquet augue, in 
+                                    fringilla quam. Nulla porta bibendum justo.</p>
                                 </div>
                             </li>
                         </ul>
                     </div>
+                    
+                </div>
+            </section>
+            <section id="caracteristica23" class="showcase section scrollspy">
+                
+            </section>
+            <section id="caracteristica3" class="showcase section scrollspy">
+                <div class="row">
+                    <div class="col s12 center-align">
+                        <h3>Beneficios</h3>
+                    </div>
+                    
                     <div class="col s12 l6 center-align">
-                        <h6 class="center" style="font-weight: 300;">Opcion 2</h6>
                         <ul class="collapsible disabled z-depth-0" data-collapsible="expandable" style="">
                             <li>
-                                <div class="collapsible-header active"><i class="material-icons orange-text lighten-1">visibility</i>Software de monitoreo de Jb</div>
+                                <div class="collapsible-header active"><h6>Aumentar el tonelaje procesado</h6></div>
                                 <div class="collapsible-body">
-                                    Vivamus convallis eros in purus malesuada, ac pulvinar neque fringilla. Aenean a lorem tincidunt, congue ligula vitae, interdum enim. Maecenas efficitur placerat est. In hac habitasse platea dictumst.
+                                    <p class="description">Sed id est vel ipsum posuere imperdiet. Phasellus viverra auctor ipsum vel dignissim. 
+                                    Nullam posuere lorem metus, faucibus scelerisque nisi gravida facilisis. Nullam venenatis 
+                                    molestie tortor et tempor. Sed id est diam.</p>
                                 </div>
-                            </li>
+                            </li>    
                         </ul>
+                    </div>
+                    <div class="col s12 l6 center-align">
+                        <ul class="collapsible disabled z-depth-0" data-collapsible="expandable" style="">
+                            <li>
+                                <div class="collapsible-header active"><h6>Optimizar la eficiencia energética en el equipo.</h6></div>
+                              <div class="collapsible-body">
+                                    <p class="description">Sed id est vel ipsum posuere imperdiet. Phasellus viverra auctor ipsum vel dignissim. 
+                                    Nullam posuere lorem metus, faucibus scelerisque nisi gravida facilisis. Nullam venenatis 
+                                    molestie tortor et tempor. Sed id est diam.</p>
+                                </div>
+                            </li> 
+                        </ul>
+                    </div>
+                    <div class="col s12 l6 center-align">
+                        <ul class="collapsible z-depth-0" data-collapsible="expandable" style="">
+                            <li>
+                                <div class="collapsible-header active"><h6>Cuidar el equipo y optimiza insumos.</h6></div>
+                              <div class="collapsible-body">
+                                    <p class="description">Sed id est vel ipsum posuere imperdiet. Phasellus viverra auctor ipsum vel dignissim. 
+                                    Nullam posuere lorem metus, faucibus scelerisque nisi gravida facilisis. Nullam venenatis 
+                                    molestie tortor et tempor. Sed id est diam.</p>
+                                </div>
+                            </li>        
+                        </ul>
+                    </div>
+                    <div class="col s12 l6 center-align">
+                        
                     </div>
                 </div>
             </section>
         </div>
-        <div class="col hide-on-small-only m2 l2">
+        <div class="col hide-on-med-and-down l2">
             <ul class="section table-of-contents">
                 <li><a href="#show1">Onmill</a></li>
-                <li><a href="#caracteristica1">Seccion 1</a></li>
-                <li><a href="#caracteristica2">Seccion 2</a></li>
-                <li><a href="#caracteristica3">Seccion 3</a></li>
-                <li><a href="#caracteristica4">Seccion 4</a></li>
+                <li><a href="#caracteristica1">¿En que consiste?</a></li>
+                <li><a href="#caracteristica2">Componentes</a></li>
+                
+                <div class="sub-table-of-contents">
+                    <li> <a href="#caracteristica21">Hardware</a></li>
+                    <li> <a href="#caracteristica22">Software</a></li>
+                    <li> <a href="#caracteristica23">Iman de sincronismo</a></li>
+                </div>
+                
+                <li><a href="#caracteristica3">Beneficios</a></li>
             </ul>
         </div>
     </div>
 
-    <footer class="page-footer grey darken-1">
-        <div class="row">
-            <div class="col s12 l5 hide-on-med-and-down">
-                <img class="responsive-img" style="max-width: 400px; margin-top: 20px;" src="img/Logos/General/Logo_nombre_completo_blanco.png" alt=""/>
-            </div>
-            <div class="col s12 l3 m4 push-m1 hide-on-small-only">
-                <h5 class="white-text">Empresa</h5>
-                <ul>
-                    <li><a class="white-text text-lighten-3" href="#!">Inicio </a></li>
-                    <li><a class="white-text text-lighten-3" href="#!">Nosotros</a></li>
-                    <li><a class="orange-text text-lighten-3" href="#!">Netos Mineria</a></li>
-                    <li><a class="cyan-text text-lighten-3" href="#!">Netos Investigacion</a></li>
-                    <li><a class="light-green-text text-lighten-3" href="#!">Netos Agricultura</a></li>
-                </ul>
-            </div>
-            <div class="col s12 l3 m4">
-                <h5 class="white-text">Contacto</h5>
-                <h5 class="white-text">(+56) 32 2652982</h5>
-                <h6 class="white-text">contacto@netos.cl</h6>
-            </div>
-            <div class="col s12 l1 m4">
-                 <img src="img/Logos/Redes Sociales/linkedin-footer_logo.png" alt=""/>
-            </div>
-        </div>
-      
-      <div class="footer-copyright">
-        <div class="container center-align">
-            Hecho con <a class="red-text text-lighten-3" href="http://materializecss.com">Materialize</a>  @ 2017 Todos los derechos reservados <span class="white-text"> NETOS S.A. </span>
-        </div>
-      </div>
-    </footer>
+    <div id="footer-module" ></div>
     
     <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/materialize.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
     <script src="js/init.js"></script>
+
     <script>
          $(document).ready(function(){
-            $('.scrollspy').scrollSpy();
+            $('#nav-module').load('modules/header/header.html');
+            $('#footer-module').load('modules/footer/footer.html');
+            $('.scrollspy').scrollSpy({
+                scrollOffset: 100
+            });
             $('.table-of-contents').pushpin({
-                offset: 400,
-                bottom: 4200 
+                offset: 400
               });
+            $('#floating-button').pushpin({
+                
+            });
           });
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 150) {
+                $('#floating-button').removeClass('fade-in');
+                $('#floating-button').fadeIn(250);
+            } else {
+                $('#floating-button').fadeOut(250);
+            }
+        });
     </script>
     </body>
 </html>

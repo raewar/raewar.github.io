@@ -32,7 +32,7 @@
     <meta name="author" content="NETOS S.A.">
     <meta name="robots" content="index, follow">
     <meta name="revisit-after" content="1 month">
-    
+
     <link rel="icon" type="image/png" href="img/Logos/favicon/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="img/Logos/favicon/favicon-16x16.png" sizes="16x16" />
 
@@ -43,31 +43,7 @@
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-
-    <nav class="white z-depth-0" role="navigation ">
-        <div class="nav-wrapper">
-            <a id="logo-container" href="index.html" class="brand-logo"><img id="img-logo" class="responsive-img" src="img/Logos/General/Logo.png" /> <img id="img-logo" class="responsive-img" src="img/Logos/General/Nombre.png" /></a>
-
-            <ul class="right hide-on-med-and-down">
-                <li class="active"><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="noticias.html">Noticias</a></li>
-                <li><a class="waves-effect waves-light btn orange lighten-1 grey-text text-darken-4 z-depth-0" href="netos_mineria.html">Mineria</a></li>
-                <li><a class="waves-effect waves-light btn cyan lighten-2 grey-text text-darken-4 z-depth-0" href="netos_investigacion.html">Investigacion</a></li>
-                <li><a class="waves-effect waves-light btn light-green grey-text text-darken-4 z-depth-0" href="netos_agricultura.html">Agricultura</a></li>
-            </ul>
-
-            <ul id="nav-mobile" class="side-nav">
-                <li class="active"><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="noticias.html">Noticias</a></li>
-                <li><a class="orange-text text-lighten-1" href="netos_mineria.html">Mineria</a></li>
-                <li><a class="cyan-text text-lighten-2" href="netos_investigacion.html">Investigacion</a></li>
-                <li><a class="light-green-text" href="netos_agricultura.html">Agricultura</a></li>
-            </ul>
-            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-      </div>
-    </nav>
+    <div id="nav-module" ></div>
     
     <header class="relative">
         <div id="index-banner" class="hero grey lighten-4 super-large">
@@ -279,55 +255,28 @@
     <br>
     <div class="divider"></div>
     <br>
-    <footer class="page-footer grey darken-1">
-        <div class="row">
-            <div class="col l5 hide-on-med-and-down">
-                <img class="responsive-img" style="max-width: 400px; margin-top: 20px;" src="img/Logos/General/Logo_nombre_completo_blanco.png" alt=""/>
-            </div>
-            <div class="col l3 m4 push-m1 hide-on-small-only">
-                <h5 class="white-text">Empresa</h5>
-                <ul>
-                    <li><a class="white-text text-lighten-3" href="#!">Inicio </a></li>
-                    <li><a class="white-text text-lighten-3" href="#!">Nosotros</a></li>
-                    <li><a class="orange-text text-lighten-3" href="#!">Netos Mineria</a></li>
-                    <li><a class="cyan-text text-lighten-3" href="#!">Netos Investigacion</a></li>
-                    <li><a class="light-green-text text-lighten-3" href="#!">Netos Agricultura</a></li>
-                </ul>
-            </div>
-            <div class="col s12 l3 m4">
-                <h5 class="white-text">Contacto</h5>
-                <h5 class="white-text">(+56) 32 2652982</h5>
-                <h6 class="white-text">contacto@netos.cl</h6>
-            </div>
-            <div class="col s12 l1 m4">
-                <a target="_new" href="https://www.linkedin.com/company/10398445"><img src="img/Logos/Redes Sociales/linkedin-footer_logo.png" alt=""/></a>
-            </div>
-  
-        </div>
-      
-      <div class="footer-copyright">
-        <div class="container center-align">
-            Hecho con <a class="red-text text-lighten-3" href="http://materializecss.com">Materialize</a>  @ 2017 Todos los derechos reservados <span class="white-text"> NETOS S.A. </span>
-        </div>
-      </div>
-    </footer>
-
+    
+    <div id="footer-module" ></div>
 
     <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/materialize.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
     <script src="js/init.js"></script>
     <script>
         $(document).ready(function(){
+            $('#nav-module').load('modules/header/header.html');
+            $('#footer-module').load('modules/footer/footer.html');
             $('.carousel').carousel({
                 shift: 100
             });
         });
+        
         $('.carousel.carousel-slider').carousel({fullWidth: true});
         setInterval(function(){
             $('.carousel').carousel('next');
           }, 5000);
     </script>
+    
         
     </body>
 </html>

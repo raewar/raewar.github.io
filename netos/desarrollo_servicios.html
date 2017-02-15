@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NETOS Investigacion</title>
+    
+    <meta name="description" content="Soluciones operacionales a distintas áreas industriales, enfocados principalemente en el rubro minero">
+    <meta name="keywords" content="Minería, Tecnología, Industria, Minero, Desarrollo, Innovación, Investigación, Empresa, NETOS">
+    <meta name="author" content="NETOS S.A.">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="1 month">
+    
+    
+    <link rel="icon" type="image/png" href="img/Logos/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="img/Logos/favicon/favicon-16x16.png" sizes="16x16" />
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+    <div id="nav-module" ></div>
+    </div>
+    <header class="relative">
+        <div class="slider">
+            <ul class="slides">
+                <li>
+                    <img class="responsive-img" src="img/Productos/automation_1.jpg" alt=""/>
+                    <div class="caption right-align">
+                      <h3></h3>
+                      <h5 class="light grey-text text-lighten-3"></h5>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="servicio-module"></div>
+
+    <div id="footer-module" ></div>
+    
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script>
+         $(document).ready(function(){
+            $('#nav-module').load('modules/header/header.html');
+            $('#servicio-module').load('modules/desarrollo/servicios.html');
+            $('#footer-module').load('modules/footer/footer.html');
+            $('.slider').slider({
+            });
+            $('.collapsible').collapsible();
+        });
+    </script>
+        
+    </body>
+</html>
