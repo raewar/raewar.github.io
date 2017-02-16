@@ -21,6 +21,7 @@ body{
     line-height: 28px;
     font-weight: 200;
 }
+
 h1 {
     font-size: 46px;
 }
@@ -84,11 +85,18 @@ nav ul a.btn{
     opacity: 1;
 }
 @media only screen and (min-width : 800px) {
+    .container{
+        width: 90%;
+    }
+    #content.container{
+        width: 70%;
+    }
     #text-banner{
+        font-size: 24px;
         font-weight: 200;
     }
     .post-banner{
-        bottom: 50px;
+        top: 450px;
         left: 50%;
         margin-bottom: -70px;
         margin-left: -392px;
@@ -96,7 +104,7 @@ nav ul a.btn{
         width: 784px;
     }
     .text-banner{
-        bottom: 250px;
+        top: 350px;
         left: 50%;
         margin-bottom: -70px;
         margin-left: -392px;
@@ -110,9 +118,9 @@ nav ul a.btn{
 }
 @media only screen and (max-width : 800px) {
     #text-banner{
-        font-size: 1.5em;
+        font-size: 20px;
         font-weight: 200;
-        margin-bottom: 30px;
+        
     }
     .hero.super-large{
         height: 300px;
@@ -122,7 +130,7 @@ nav ul a.btn{
 #splash-logo{
     max-height: 240px;
     max-width: 240px;
-    margin-bottom: 250px;
+    margin-bottom: 185px;
 }
 .splash-item{
     padding-top: 250px;
@@ -152,7 +160,7 @@ nav ul a.btn{
     vertical-align: middle;
 }
 #partner-carousel{
-    max-height: 250px;
+    max-height: 350px;
 }
 
 #index-banner{
@@ -172,6 +180,7 @@ nav ul a.btn{
 /*Timeline*/
 #content {
     text-align: center;
+    
 }
 
 section.timeline-outer {
@@ -269,3 +278,13 @@ h1.header {
     font-size: 13px;
     margin-left: 20px;
 }
+
+/**/
+.show-card{
+    border-radius: 10px;
+}
+.card-panel{
+    padding: 10px;
+}
+
+/**/

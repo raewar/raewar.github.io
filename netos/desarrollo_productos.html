@@ -24,22 +24,65 @@
 </head>
 <body>
     <div id="nav-module" ></div>
-    </div>
-    <header class="relative">
-        <div class="slider">
-            <ul class="slides">
-                <li>
-                    <img class="responsive-img" src="img/Productos/automation_1.jpg" alt=""/>
-                    <div class="caption right-align">
-                      <h3></h3>
-                      <h5 class="light grey-text text-lighten-3"></h5>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </header>
 
-    <div id="producto-module"></div>
+
+    <section id="proyectos">
+            <div class="container">
+                <div class="section">
+                    <div class="row">
+                        <div class="col s12 l12">
+                            <div class="card horizontal show-card">
+                                <div class="card-image hide-on-small-only">
+                                    <img src="img/Productos/proyectos-img-2.png" alt=""/>
+                                </div>
+                                <div class="card-stacked">
+                                    <div class="card-content">
+                                        <h5>Medicion y análisis de fallas de transformadores de minas a rajo abierto</h5>
+                                         <p class="description">El proyecto contempló el análisis de fallas ocurridas en equipos 
+                                             de la primera línea de producción e incluyó mediciones en distintas ubicaciones del 
+                                             Sistema Eléctrico de Potencia. Luego de este trabajo se determinaron distintas líneas 
+                                             de acción para mejorar la confiablidad de la operación.</p>
+                                         <img class="right" style="max-height: 40px;" src="img/Customers/codelco.png" alt=""/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 l12">
+                            <div class="card horizontal show-card">
+                                <div class="card-image hide-on-small-only">
+                                    <img src="img/Productos/proyectos-img-5.png" alt=""/>
+                                </div>
+                                <div class="card-stacked">
+                                    <div class="card-content">
+                                        <h5>Dispositivo portátil para mediciones de fructosa y glucosa en cubas</h5>
+                                         <p class="description">El proyecto consistió en el diseño y construcción de un dispositivo portátil 
+                                        que permite medir instantáneamente la concentración de fructosa y glucosa en las cubas. 
+                                        El dispositivo permite acceder a información necesaria para mejorar la calidad del producto.</p>
+                                         <img class="right" style="max-height: 50px;" src="img/Customers/ccv.png" alt=""/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 l12">
+                            <div class="card horizontal show-card">
+                                <div class="card-image hide-on-small-only">
+                                    <img src="img/Productos/proyectos-img-4.png" alt=""/>
+                                </div>
+                                <div class="card-stacked">
+                                    <div class="card-content">
+                                        <h5>Sistema de control remoto para perforadora Atlas Copco</h5>
+                                         <p class="description">El proyecto contempló el diseño y la construcción de un control remoto para una perforadora 
+                                        Atlas Copco modelo Pit Viper de 20 metros de altura y 57 toneladas de peso. El producto le permite al cliente contar 
+                                        con una solución local de rápida implementación ante fallas y eventos no programados.</p>
+                                         <img class="right" style="max-height: 20px;" src="img/Customers/finning_cat_large.png" alt=""/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
 
     <div id="footer-module" ></div>
     
@@ -50,7 +93,6 @@
     <script>
          $(document).ready(function(){
             $('#nav-module').load('modules/header/header.html');
-            $('#producto-module').load('modules/desarrollo/productos.html');
             $('#footer-module').load('modules/footer/footer.html');
             $('.slider').slider({
             });

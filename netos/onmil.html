@@ -21,11 +21,11 @@
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
-<body >
+<body class="white">
     <div id="nav-module" ></div>
     <div class="row">
         <div class="col s3 push-s9">
-            <a id="floating-button" class="btn-floating btn-large waves-effect waves-light red fade-in hide-on-large-only" href="#top"><i class="material-icons">arrow_upward</i></a>
+            <a id="floating-button" class="btn-large waves-effect waves-light red fade-in hide-on-large-only" href="#top"><i class="material-icons">arrow_upward</i></a>
         </div>
     </div>
     <div id="top" class="scrollspy"></div>
@@ -258,7 +258,7 @@
                 offset: 400
               });
             $('#floating-button').pushpin({
-                
+                offset: $(window).height() - 50
             });
           });
         $(window).scroll(function() {

@@ -24,23 +24,64 @@
 </head>
 <body>
     <div id="nav-module" ></div>
-        
-    <header class="relative">
-        <div class="slider">
-            <ul class="slides">
-                <li>
-                    <img class="responsive-img" src="img/Productos/asesorias_molienda.jpg" alt=""/>
-                    <div class="caption right-align">
-                      <h3></h3>
-                      <h5 class="light grey-text text-lighten-3"></h5>
+
+    <section id="proyectos">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 l8">
+                    <div class="video-container">
+                        <iframe width="853" height="480" src="https://player.vimeo.com/video/181638411?autoplay=1&loop=1" frameborder="0" allowfullscreen></iframe>
                     </div>
-                </li>
-                
-            </ul>
+                </div>
+                <div class="col s12 m12 l4 center-align">
+                    <div class="card-panel show-card">
+                        <img class="right" style="max-height: 40px; margin-bottom: -30px;" src="img/Customers/escondida.png" alt=""/>
+                        <img class="responsive-img" src="img/Productos/onMilL3.png" alt=""/>
+                        <h5 class="center">Medición en línea del nivel de llenado del molino SAG</h5>
+                        <ul class="collapsible z-depth-0" data-collapsible="expandable">
+                            <li>
+                              <div class="collapsible-header"><i class="material-icons">whatshot</i>Eficiencia Operacional.</div>
+                            </li>
+                            <li>
+                              <div class="collapsible-header"><i class="material-icons">settings_input_hdmi</i>Eficiencia Energética</div>
+                            </li>
+                            <li>
+                              <div class="collapsible-header active"><i class="material-icons">search</i>Menor Variabilidad de llenado.</div>
+                            </li>
+                            <li>
+                              <div class="collapsible-header active"><i class="material-icons">find_in_page</i>Optimizacion en uso de acero</div>
+                            </li>
+                            <li>
+                              <div class="collapsible-header active"><i class="material-icons">whatshot</i>Cuidado del Equipo.</div>
+                            </li>
+                        </ul>
+                        <a class="waves-effect waves-light btn orange lighten-1 grey-text text-darken-4 z-depth-1" style="width: 100%;" href="onmil.html">Pagina del producto</a>
+                    </div>
+                </div>
+                <div class="col s12">
+                    <br>
+                    <div class="divider"></div>
+                    <br>
+                </div>
+                <div class="col s12 l12">
+                    <div class="card horizontal show-card">
+                        <div class="card-image hide-on-small-only">
+                            <img src="img/Productos/proyectos-img-3.png" alt=""/>
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content">
+                                <h5>Apoyo técnico en Juicio causa rol C-4342-2006</h5>
+                                 <p class="description">Verificación de antecedentes técnicos y 
+                                análisis de datos operacionales para la determinación de la causa 
+                                de falla de un equipo de gran envergadura en el sector minero, específicamente un molino SAG GMD</p>
+                                 <img class="right" style="max-height: 40px;" src="img/Customers/aig.png" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </header>
-    
-    <div id="producto-module"></div>
+    </section>
 
     <div id="footer-module" ></div>
     
@@ -51,7 +92,6 @@
     <script>
          $(document).ready(function(){
             $('#nav-module').load('modules/header/header.html');
-            $('#producto-module').load('modules/mineria/productos.html');
             $('#footer-module').load('modules/footer/footer.html');
             $('.slider').slider({
                 

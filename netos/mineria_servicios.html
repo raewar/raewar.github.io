@@ -24,23 +24,73 @@
 </head>
 <body>
     <div id="nav-module" ></div>
-        
-    <header class="relative">
-        <div class="slider">
-            <ul class="slides">
-                <li>
-                    <img class="responsive-img" src="img/Productos/asesorias_molienda.jpg" alt=""/>
-                    <div class="caption right-align">
-                      <h3></h3>
-                      <h5 class="light grey-text text-lighten-3"></h5>
+
+    <section id="servicios">
+        <div class="container">
+            <div class="section">
+                <div class="card-panel show-card z-depth-2">
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="icon-block center-align">
+                              <h5>ASESORÍAS EN PROCESOS DE MOLIENDA</h5>
+                            </div>
+                        </div>
+                        <div class="col s12 l6">
+                            <ul class="collapsible z-depth-0" data-collapsible="expandable" style="">
+                                <li>
+                                  <div class="collapsible-header"><i class="material-icons">whatshot</i>Estimación del nivel de llenado de bolas JB</div>
+                                </li>
+                                <li>
+                                  <div class="collapsible-header"><i class="material-icons">whatshot</i>Estimación del nivel de carga total JC</div>
+                                </li>
+                                <li>
+                                  <div class="collapsible-header active"><i class="material-icons">search</i>Estudios de fenómenos al interior del molino</div>
+                                  <div class="collapsible-body">
+                                      <span>
+                                            <div class="chip">
+                                                Consumo de acero
+                                            </div>
+                                            <div class="chip">
+                                                Ubicación de carga por vibracion
+                                            </div>
+                                            <div class="chip">
+                                                Segregación de medios de molienda.
+                                            </div>
+                                      </span>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="collapsible-header active"><i class="material-icons">find_in_page</i>Análisis de datos operacionales en circuitos de molienda:</div>
+                                  <div class="collapsible-body">
+                                      <span>
+                                            <div class="chip">
+                                                Análisis de consumo
+                                            </div>
+                                            <div class="chip">
+                                                Análisis de presión en descansos
+                                            </div>
+                                      </span>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="collapsible-header active"><i class="material-icons">whatshot</i>Estimaciones de valores óptimos de operación:</div>
+                                  <div class="collapsible-body">
+                                      <span>
+                                            <div class="chip">Velocidad crítica</div>
+                                            <div class="chip">Densidad de pulpa</div>
+                                      </span>
+                                  </div>
+                                </li>
+                              </ul>
+                        </div>
+                        <div class="col s12 l6 hide-on-med-and-down">
+                            <img class="responsive-img" src="img/Productos/asesorias_molienda.jpg" alt=""/>
+                        </div>
                     </div>
-                </li>
-                
-            </ul>
+                </div>
+            </div>
         </div>
-    </header>
-    
-    <div id="servicio-module"></div>
+    </section>
 
     <div id="footer-module" ></div>
     
@@ -51,14 +101,8 @@
     <script>
          $(document).ready(function(){
             $('#nav-module').load('modules/header/header.html');
-            $('#servicio-module').load('modules/mineria/servicios.html');
             $('#footer-module').load('modules/footer/footer.html');
-            $('.slider').slider({
-                
-            });
-            $('.collapsible').collapsible({
-                
-            });
+            $('.slider').slider();
           });
     </script>
     </body>
