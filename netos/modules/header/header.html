@@ -3,32 +3,43 @@
     <head>
     </head>
     <body>
-        <nav class="grey lighten-5 z-depth-0" role="navigation ">
+        <nav class="white z-depth-0" role="navigation">
         <div class="nav-wrapper">
-            <a id="logo-container" href="index.html" class="brand-logo"><img id="img-logo" class="responsive-img" src="img/Logos/General/Logo.png" /> <img id="img-logo" class="responsive-img" src="img/Logos/General/Nombre.png" /></a>
+            <a id="logo-container" href="index.html" class="brand-logo">
+                <img id="img-logo" class="responsive-img" src="img/Logos/General/Logo.png" /> <img id="img-logo" class="responsive-img" src="img/Logos/General/Nombre.png" />
+            </a>
 
             <ul class="right hide-on-med-and-down">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="noticias.html">Noticias</a></li>
-                <li><a class="waves-effect waves-light btn dropdown-button orange lighten-1 grey-text text-darken-4 z-depth-0" href="#" data-activates="mineria" >Mineria</a></li>
-                <li><a class="waves-effect waves-light btn dropdown-button cyan lighten-2 grey-text text-darken-4 z-depth-0" href="#" data-activates="desarrollo">Desarrollo Tecnologico</a></li>
-                <li><a class="waves-effect waves-light btn dropdown-button light-green grey-text text-darken-4 z-depth-0" href="#" data-activates="energia">Energia</a></li>
+                <li><a class="dropdown-button orange-text text-lighten-1 z-depth-0" href="#" data-activates="mineria" >Mineria</a></li>
+                <li><a class="dropdown-button cyan-text text-lighten-2 z-depth-0" href="#" data-activates="desarrollo">Desarrollo</a></li>
+                <li><a class="dropdown-button light-green-text z-depth-0" href="#" data-activates="energia">Energia</a></li>
             </ul>
 
             <ul id="nav-mobile" class="side-nav">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="noticias.html">Noticias</a></li>
-                <li><a class="orange-text text-lighten-1" href="mineria_landing.html">Mineria</a></li>
-                <li><a class="orange-text text-lighten-1" href="mineria_productos.html">Productos</a></li>
-                <li><a class="orange-text text-lighten-1" href="mineria_servicios.html">Servicios</a></li>
-                <li><a class="cyan-text text-lighten-2" href="desarrollo_landing.html">Desarrollo Tecnologico</a></li>
-                <li><a class="cyan-text text-lighten-2" href="desarrollo_productos.html"> Productos</a></li>
-                <li><a class="cyan-text text-lighten-2" href="desarrollo_servicios.html"> Servicios</a></li>
-                <li><a class="light-green-text" href="energia_landing.html">Energia</a></li>
-                <li><a class="light-green-text" href="energia_servicios.html">Servicios</a></li>
+                <li><a class="dropdown-button orange-text text-lighten-1" href="#!" data-activates="dropdown_minas">Mineria<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="dropdown-button cyan-text text-lighten-2" href="#!" data-activates="dropdown_desarrollo">Desarrollo Tecnologico<i class="material-icons right">arrow_drop_down</i></a></li> 
+                <li><a class="dropdown-button light-green-text" href="#!" data-activates="dropdown_energia">Energia<i class="material-icons right">arrow_drop_down</i></a></li> 
                 
+                <ul id='dropdown_minas' class='dropdown-content'>
+                    <li><a class="orange-text text-lighten-1" href="mineria_landing.html">Filosofia</a></li>
+                    <li><a class="orange-text text-lighten-1" href="mineria_productos.html">Productos</a></li>
+                    <li><a class="orange-text text-lighten-1" href="mineria_servicios.html">Servicios</a></li>
+                </ul>
+                <ul id='dropdown_desarrollo' class='dropdown-content'>
+                    <li><a class="cyan-text text-lighten-2" href="desarrollo_landing.html">Filosofia</a></li>
+                    <li><a class="cyan-text text-lighten-2" href="desarrollo_productos.html"> Productos</a></li>
+                    <li><a class="cyan-text text-lighten-2" href="desarrollo_servicios.html"> Servicios</a></li>
+                </ul>
+                <ul id='dropdown_energia' class='dropdown-content'>
+                    <li><a class="light-green-text" href="energia_landing.html">Filosofia</a></li>
+                    <li><a class="light-green-text" href="energia_servicios.html">Servicios</a></li>
+                </ul>
             </ul>
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
         </div>
@@ -52,7 +63,8 @@
     <script>
         $(".button-collapse").sideNav();
         $('.dropdown-button').dropdown({
-            belowOrigin: true
+            belowOrigin: true,
+            constrainWidth: false
         });
     </script>
 </html>
